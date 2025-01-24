@@ -33,8 +33,9 @@
 
 ## 参考
 [Apache Rewrite 规则详解知识大全](https://www.cnblogs.com/zqw111/p/10919107.html)  
-[SQLite文件可直接被下载 typecho/typecho#1806](https://github.com/typecho/typecho/issues/1806)  
-[typecho 程序防黑客安全加固教程](https://www.80srz.com/posts/632.html)  
+[typecho/typecho#1806:SQLite文件可直接被下载](https://github.com/typecho/typecho/issues/1806)  
+[typecho 程序防黑客安全加固教程](https://www.80srz.com/posts/632.html) 
+
 
 
 
