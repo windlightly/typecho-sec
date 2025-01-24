@@ -1,5 +1,5 @@
 # typecho-sec
-基于pache HTTP Server重写机制的typecho的若干安全规则
+基于Apache HTTP Server重写机制的typecho的若干安全规则
 ## 注意：本仓库中的规则集并不能保证你的个人网站的绝对安全。且启用规则可能会导致无法正常访问你的网站，请谨慎启用。
 
 ## 说明
