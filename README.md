@@ -20,7 +20,7 @@
 使用浏览器访问[主机名]/[网站根目录下的文件路径]。如显示无法访问，则说明规则启用。
 
 
-#### 参考
+## 参考
 [Apache Rewrite 规则详解知识大全](https://www.cnblogs.com/zqw111/p/10919107.html)  
 [SQLite文件可直接被下载 typecho/typecho#1806](https://github.com/typecho/typecho/issues/1806)  
 [typecho 程序防黑客安全加固教程](https://www.80srz.com/posts/632.html)  
