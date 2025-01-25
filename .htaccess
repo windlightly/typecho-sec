@@ -6,3 +6,34 @@ RewriteRule ^(.*)$ index.php [E=PATH_INFO:$1]
 RewriteRule (var|usr)(.+ph*)$ index.php [E=PATH_INFO:$1]
 RewriteRule (config.inc.php|.htaccess)$ index.php [L,E=PATH_INFO:$1]
 RewriteRule \.db$ - [F,L]
+
+# Base rule: if the URL contains "/var/" or "/usr/", block the request
+# 限制web读取var、usr文件目录
+RewriteCond %{REQUEST_URI} ^(.*)/var/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^(.*)/usr/(.*)$
+RewriteRule ^ - [F,L]
+
+# Additional security measures 
+# Block access to .htaccess and .htpasswd files
+<Files ~ "^\.htacc">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</Files>
+
+
+
+# Block access to certain file extensions (optional)
+# <FilesMatch "\.(php[3457]?|cgi|pl|py|rb|asp|aspx|sh|bat|exe)$">
+#    Order allow,deny
+#    Deny from all
+#    Satisfy All
+
+
+
+# 记录重写日志
+# Optional: Log forbidden requests (uncomment the next line to enable logging)
+
+# RewriteLog "/path/to/your/rewrite.log"
+
+# RewriteLogLevel 3
