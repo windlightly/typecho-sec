@@ -7,6 +7,12 @@ RewriteRule (var|usr)(.+ph*)$ index.php [E=PATH_INFO:$1]
 RewriteRule (config.inc.php|.htaccess)$ index.php [L,E=PATH_INFO:$1]
 RewriteRule \.db$ - [F,L]
 
+# 禁止目录索引
+<Files *>
+    Options -Indexes
+</Files>
+
+
 # Base rule: if the URL contains "/var/" or "/usr/", block the request
 # 限制web读取var、usr文件目录
 RewriteCond %{REQUEST_URI} ^(.*)/var/(.*)$ [OR]
