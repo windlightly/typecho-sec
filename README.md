@@ -1,11 +1,15 @@
 # typecho-sec
-基于Apache HTTP Server重写机制的typecho的若干安全规则
+基于Apache HTTP Server重写机制的typecho的若干安全规则 | 
 Several security rules for Typecho based on the Apache HTTP Server rewrite mechanism
 ## 注意：本仓库中的规则集并不能保证你的个人网站的绝对安全。且启用规则可能会导致无法正常访问你的网站，请谨慎启用。
 
 The rule sets in this repository do not guarantee absolute security for your personal website. Additionally, enabling these rules may result in the inability to access your website normally. Please enable them with caution.
 
 ## 说明
+#### 背景
+serv00的免费服务器的HTTP Server配置可能存在问题，使网站目录中的敏感文件可以直接通过输入URL进行下载：  
+[NewApi .db 能直接下载](https://linux.do/t/topic/402126)  
+
 
 #### 使用范围：
 使用`Apache HTTP Server`和`typecho 1.2`搭建的个人论坛。  
