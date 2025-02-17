@@ -9,7 +9,7 @@ RewriteRule \.db$ - [F,L]
 
 # 禁止目录索引
 <Files *>
-    Options -Indexes
+Options -Indexes
 </Files>
 
 
